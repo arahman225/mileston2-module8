@@ -1,0 +1,183 @@
+nav a{
+    text-decoration: none;
+    padding: 12px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex;
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+/* .form-bg{
+    background-image: url(/assests/images/handshake.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.082);
+    background-blend-mode: overlay;
+}
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 75px 35px;
+    width:100%;
+}
+
+
+form input{
+    margin-left: 15px;
+    border-radius: 8px;
+}
+
+form input[type="email"]{
+    padding: 16px 24px;
+    width: 750px;
+    
+}
+
+form input[type="submit"]{
+    padding: 16px 24px;
+} */
+
+
+.date{
+    background-color: aqua;
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+
+.day{
+    background-color: rgba(0, 0, 0, 0.205);
+    color: rgb(0, 0, 0);
+    border-radius: 8px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.calender-container{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 30px repeat(5, 50px);
+    column-gap: 15px;
+    row-gap: 15px;
+}
+
+
+/* food container start */ 
+.padding{
+    padding: 85px 35px;
+}
+
+.food-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    
+}
+
+
+
+.food-container .food{
+    border: 1px solid rgba(0, 0, 0, 0.192);
+    padding: 15px;
+}
+
+.food-container img{
+    width: 100%;
+}
+
+
+/* -----------------------------------------------Responsiveness start--------------------------------------------------- */
+
+
+
+@media screen and (max-width: 1200px) {
+    .food-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .food-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .food-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
+@media screen and (max-width: 576px) {
+    .food-container{
+        grid-template-columns: repeat(1, 1fr);
+        background-color: skyblue;
+    }
+}
+
+
+
+@media screen and (min-width: 576px) {
+    .food-container{
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .food-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .food-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .food-container{
+        grid-template-columns: repeat(4, 1fr);
+       
+    }
+}
+
+
+@media screen and (min-width:557px) and (max-width:992px){
+
+
+    .food-container{
+        background-color: black;
+    }
+    
+}
+
+/* -----------------------------------------------Responsiveness end--------------------------------------------------- */
+
+/* food container end */ 
